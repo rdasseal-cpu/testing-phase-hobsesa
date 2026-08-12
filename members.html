@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Official Members Directory of Hooghly Branch (Govt) School Ex-Students' Association (Regn. No. S/93009). Search and browse life members database.">
+    <title>Members Directory | Hooghly Branch (Govt) School Ex-Students' Association</title>
+
+    <!-- Google Fonts Preconnect for Mobile Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================================================
+         Sticky Navigation Header
+         ========================================================================== -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html#home" class="logo">
+                <img src="info/img/logo_img.jpeg" alt="Hooghly Branch Govt School Ex-Students Association Logo" class="nav-logo-img" width="48" height="48">
+                <div class="logo-text">
+                    <h1>HOBSESA</h1>
+                    <p>Hooghly Branch (Govt) School</p>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#members" class="nav-link">Executive Board</a></li>
+                    <li><a href="members.html" class="nav-link active">Members Directory</a></li>
+                    <li><a href="index.html#notices" class="nav-link">Notice Board</a></li>
+                    <li><a href="index.html#events" class="nav-link">Events</a></li>
+                    <li><a href="index.html#donate" class="nav-link">Donate</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+         Members Directory Section
+         ========================================================================== -->
+    <section class="directory-section">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 35px;">
+                <h2>Alumni Members Directory</h2>
+                <p>Complete directory of registered ex-students of Hooghly Branch (Govt) School Ex-Students' Association.</p>
+            </div>
+
+            <!-- Controls: Search & Filters -->
+            <div class="directory-controls">
+                <div class="directory-search-box">
+                    <input type="text" id="dir-search-input" placeholder="Search by member name, membership no., profession, email/phone...">
+                </div>
+
+                <div class="directory-filter-box">
+                    <select id="dir-year-filter" class="directory-select">
+                        <option value="">All Passing Years</option>
+                        <option value="1940s">1940 - 1949</option>
+                        <option value="1950s">1950 - 1959</option>
+                        <option value="1960s">1960 - 1969</option>
+                        <option value="1970s">1970 - 1979</option>
+                        <option value="1980s">1980 - 1989</option>
+                        <option value="1990s">1990 - 1999</option>
+                        <option value="2000s">2000 & Beyond</option>
+                    </select>
+
+                    <select id="dir-page-size" class="directory-select">
+                        <option value="25">25 per page</option>
+                        <option value="50">50 per page</option>
+                        <option value="100">100 per page</option>
+                        <option value="all">Show All</option>
+                    </select>
+
+                    <span class="directory-count" id="dir-count-text">Showing 0 members</span>
+                </div>
+            </div>
+
+            <!-- Table Container -->
+            <div class="directory-table-container">
+                <table class="directory-table" id="directory-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 55px;">#</th>
+                            <th>Name of Member & Membership No.</th>
+                            <th>Date of Birth</th>
+                            <th>Profession</th>
+                            <th style="text-align: center;">Year of Passing</th>
+                            <th>Phone No. / E-mail No.</th>
+                        </tr>
+                    </thead>
+                    <tbody id="directory-tbody">
+                        <!-- Populated dynamically via JS -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination Bar -->
+            <div class="directory-pagination">
+                <span id="page-info-text" style="color: var(--color-text-muted); font-size: 0.9rem;">Page 1 of 1</span>
+                <div class="pagination-controls" id="pagination-controls">
+                    <!-- Page buttons rendered dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Footer Section
+         ========================================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer Banner Landmark Image -->
+            <div class="footer-banner-container">
+                <img src="info/img/footer_img.jpeg" alt="Hooghly Branch Govt School Landmark" class="footer-banner-img">
+                <div class="footer-banner-overlay">
+                    <h3>Hooghly Branch (Govt) School Ex-Students' Association</h3>
+                    <p>Chawk Bazar, Hooghly • Estd. 1996 • Regn. No. S/93009</p>
+                </div>
+            </div>
+
+            <div class="footer-logo">
+                <img src="info/img/logo_img.jpeg" alt="Association Logo" class="footer-logo-img">
+                <h2 style="margin-left: 10px;">HOBSESA</h2>
+            </div>
+            <p style="color: #cbd5e1; margin-top: 5px;">Strengthening Unity & Fraternity Among Former and Present Students</p>
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+            <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 15px;">&copy; 2026 Hooghly Branch (Govt) School Ex-Students' Association (Regn. No. S/93009). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS Files -->
+    <script src="js/members-data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle with Backdrop & Scroll Lock
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            let navBackdrop = document.querySelector('.nav-backdrop');
+            if (!navBackdrop) {
+                navBackdrop = document.createElement('div');
+                navBackdrop.className = 'nav-backdrop';
+                document.body.appendChild(navBackdrop);
+            }
+
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', () => {
+                    const isOpen = navToggle.classList.contains('open');
+                    if (isOpen) {
+                        closeMenu();
+                    } else {
+                        openMenu();
+                    }
+                });
+
+                navLinks.forEach(link => link.addEventListener('click', closeMenu));
+                navBackdrop.addEventListener('click', closeMenu);
+
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+                        closeMenu();
+                    }
+                });
+            }
+
+            function openMenu() {
+                navToggle.classList.add('open');
+                navMenu.classList.add('open');
+                navBackdrop.classList.add('active');
+                navToggle.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMenu() {
+                navToggle.classList.remove('open');
+                navMenu.classList.remove('open');
+                navBackdrop.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+
+            // Directory Renderer Logic
+            const tbody = document.getElementById('directory-tbody');
+            const searchInput = document.getElementById('dir-search-input');
+            const yearFilter = document.getElementById('dir-year-filter');
+            const pageSizeSelect = document.getElementById('dir-page-size');
+            const countText = document.getElementById('dir-count-text');
+            const pageInfoText = document.getElementById('page-info-text');
+            const paginationControls = document.getElementById('pagination-controls');
+
+            let currentPage = 1;
+            let filteredMembers = [...MEMBERS_DATA];
+
+            function filterData() {
+                const query = searchInput.value.trim().toLowerCase();
+                const yearVal = yearFilter.value;
+
+                filteredMembers = MEMBERS_DATA.filter(m => {
+                    const name = (m.nameAndMemNo || '').toLowerCase();
+                    const prof = (m.profession || '').toLowerCase();
+                    const contact = (m.contactInfo || '').toLowerCase();
+                    const dob = (m.dob || '').toLowerCase();
+                    const passYear = (m.yearPassing || '').trim();
+
+                    const matchesQuery = query === '' || name.includes(query) || prof.includes(query) || contact.includes(query) || dob.includes(query) || passYear.includes(query);
+
+                    let matchesYear = true;
+                    if (yearVal) {
+                        const yr = parseInt(passYear, 10);
+                        if (isNaN(yr)) {
+                            matchesYear = false;
+                        } else if (yearVal === '1940s') matchesYear = yr >= 1940 && yr <= 1949;
+                        else if (yearVal === '1950s') matchesYear = yr >= 1950 && yr <= 1959;
+                        else if (yearVal === '1960s') matchesYear = yr >= 1960 && yr <= 1969;
+                        else if (yearVal === '1970s') matchesYear = yr >= 1970 && yr <= 1979;
+                        else if (yearVal === '1980s') matchesYear = yr >= 1980 && yr <= 1989;
+                        else if (yearVal === '1990s') matchesYear = yr >= 1990 && yr <= 1999;
+                        else if (yearVal === '2000s') matchesYear = yr >= 2000;
+                    }
+
+                    return matchesQuery && matchesYear;
+                });
+
+                currentPage = 1;
+                renderDirectory();
+            }
+
+            function renderDirectory() {
+                tbody.innerHTML = '';
+                const total = filteredMembers.length;
+                countText.textContent = `Showing ${total} member${total === 1 ? '' : 's'}`;
+
+                if (total === 0) {
+                    tbody.innerHTML = `<tr><td colspan="6" style="text-align: center; padding: 30px; color: var(--color-text-muted);">No members match your search criteria.</td></tr>`;
+                    pageInfoText.textContent = 'Page 0 of 0';
+                    paginationControls.innerHTML = '';
+                    return;
+                }
+
+                let pageSize = pageSizeSelect.value === 'all' ? total : parseInt(pageSizeSelect.value, 10);
+                const totalPages = Math.ceil(total / pageSize);
+                if (currentPage > totalPages) currentPage = totalPages;
+
+                const startIdx = (currentPage - 1) * pageSize;
+                const endIdx = Math.min(startIdx + pageSize, total);
+                const pageMembers = filteredMembers.slice(startIdx, endIdx);
+
+                pageMembers.forEach((m, idx) => {
+                    const tr = document.createElement('tr');
+                    const rowNum = startIdx + idx + 1;
+
+                    tr.innerHTML = `
+                        <td data-label="#" style="font-weight: 600; color: var(--color-text-muted);">${rowNum}</td>
+                        <td data-label="Member Name & ID"><strong>${escapeHtml(m.nameAndMemNo || 'N/A')}</strong></td>
+                        <td data-label="Date of Birth">${escapeHtml(m.dob || '-')}</td>
+                        <td data-label="Profession">${escapeHtml(m.profession || '-')}</td>
+                        <td data-label="Passing Year" style="text-align: center;"><span class="badge-mem-no">${escapeHtml(m.yearPassing || '-')}</span></td>
+                        <td data-label="Contact Details">${escapeHtml(m.contactInfo || '-')}</td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+
+                pageInfoText.textContent = `Showing ${startIdx + 1}–${endIdx} of ${total} members (Page ${currentPage} of ${totalPages})`;
+
+                // Render Pagination Controls
+                renderPagination(totalPages);
+            }
+
+            function renderPagination(totalPages) {
+                paginationControls.innerHTML = '';
+                if (totalPages <= 1) return;
+
+                // Prev Button
+                const prevBtn = document.createElement('button');
+                prevBtn.className = 'page-btn';
+                prevBtn.innerHTML = '&laquo; Prev';
+                prevBtn.disabled = currentPage === 1;
+                prevBtn.addEventListener('click', () => {
+                    if (currentPage > 1) {
+                        currentPage--;
+                        renderDirectory();
+                        window.scrollTo({ top: 300, behavior: 'smooth' });
+                    }
+                });
+                paginationControls.appendChild(prevBtn);
+
+                // Page Number Buttons
+                let startP = Math.max(1, currentPage - 2);
+                let endP = Math.min(totalPages, currentPage + 2);
+
+                if (startP > 1) {
+                    const btn = createPageBtn(1);
+                    paginationControls.appendChild(btn);
+                    if (startP > 2) {
+                        const dots = document.createElement('span');
+                        dots.textContent = '...';
+                        dots.style.alignSelf = 'center';
+                        paginationControls.appendChild(dots);
+                    }
+                }
+
+                for (let i = startP; i <= endP; i++) {
+                    paginationControls.appendChild(createPageBtn(i));
+                }
+
+                if (endP < totalPages) {
+                    if (endP < totalPages - 1) {
+                        const dots = document.createElement('span');
+                        dots.textContent = '...';
+                        dots.style.alignSelf = 'center';
+                        paginationControls.appendChild(dots);
+                    }
+                    paginationControls.appendChild(createPageBtn(totalPages));
+                }
+
+                // Next Button
+                const nextBtn = document.createElement('button');
+                nextBtn.className = 'page-btn';
+                nextBtn.innerHTML = 'Next &raquo;';
+                nextBtn.disabled = currentPage === totalPages;
+                nextBtn.addEventListener('click', () => {
+                    if (currentPage < totalPages) {
+                        currentPage++;
+                        renderDirectory();
+                        window.scrollTo({ top: 300, behavior: 'smooth' });
+                    }
+                });
+                paginationControls.appendChild(nextBtn);
+            }
+
+            function createPageBtn(pageNum) {
+                const btn = document.createElement('button');
+                btn.className = `page-btn ${pageNum === currentPage ? 'active' : ''}`;
+                btn.textContent = pageNum;
+                btn.addEventListener('click', () => {
+                    currentPage = pageNum;
+                    renderDirectory();
+                    window.scrollTo({ top: 300, behavior: 'smooth' });
+                });
+                return btn;
+            }
+
+            function escapeHtml(str) {
+                return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+            }
+
+            // Event Listeners
+            searchInput.addEventListener('input', filterData);
+            yearFilter.addEventListener('change', filterData);
+            pageSizeSelect.addEventListener('change', () => {
+                currentPage = 1;
+                renderDirectory();
+            });
+
+            // Initial render
+            filterData();
+        });
+    </script>
+</body>
+
+</html>
